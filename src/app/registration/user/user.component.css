@@ -1,0 +1,92 @@
+.card{
+   background: #FBFBFB 0% 0% no-repeat padding-box;
+   box-shadow: 0px 4px 20px #00000029;
+   border-radius: 30px;
+   opacity: 1;
+   padding: 58px 7% 50px 6%;
+   margin: -20% -7% 0px 0px;
+   width: 67%;
+   text-align: left;
+   position: relative;
+}
+
+
+.textcap{
+   font-size: xx-large;
+   font-family:roboto,bold ;
+   margin: 0px;
+   text-align: center;
+}
+
+.littletext{
+   font-size: 20px;
+   font-family: roboto,bold;
+   margin: 0px;
+   text-align: center;
+}
+
+
+form{ padding-top: 70px 40px 0px; }
+.form-group{
+   margin: 1rem 0px;
+   overflow: hidden;
+}
+
+
+
+.groupInput{
+   display: flex;
+   gap: 15px;
+}
+.groupphone{
+   display: flex;
+}
+.groupphone select{ border-right: none; }
+.groupphone input{ border-left: none; }
+.form-control:focus-visible, .form-control:focus,.form-control:focus-within {
+   box-shadow:none
+
+}
+
+   
+
+.form-control {
+   display: block;
+   width: 100%;
+   /* height: calc(1.5em + .75rem + 2px); */
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   margin: 0;
+   font-family: inherit;
+}
+input[type="submit"]{
+   background: transparent linear-gradient(180deg, #FF6E4E 0%, #FF6E4E 100%) 0% 0% no-repeat padding-box;
+   box-shadow: 0px 4px 8px #00000029;
+   color: #FFFFFF;
+   font-family:roboto,bold ;
+   letter-spacing: 0.6px;
+   margin-top: 58px;
+}
+
+@media only screen and (max-width: 599.5px) {
+   .card{
+      margin: 0px -6% 0px 0px;
+      width: 83%;
+   }
+   .textcap{
+      display: none;
+   }
+   .littletext{
+      color:#008CC9;
+      margin-top: -20px;
+   }
+}
+

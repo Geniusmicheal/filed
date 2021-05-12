@@ -1,0 +1,38 @@
+<div class="card">
+   <div class="card_header">
+      <p class="textcap">Let's Start</p>
+      <p class="littletext">
+         Fill out the form and we'll get in touch to get your trial set up.
+      </p>
+   </div>
+   <form [formGroup]="ads" (ngSubmit)="onSubmit()">
+      <div class="form-group" >
+         <label>Do you want to make ads that convert?</label>
+         <div>
+            <label class="form-check-label" for="radio">
+               <input type="radio" class="form-check-input" id="radio" name="optradio" value="option1" checked formControlName="convert">Yes
+             </label>
+
+             <label class="form-check-label" for="radio1">
+               <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" formControlName="convert" >No
+             </label>
+         </div>
+
+         <div class="form-group" >
+            <label>What's your monthly ad budget?</label>
+            <select class="form-control" id="sel1" name="sellist1" formControlName="budget">
+               <option>Select</option>
+               <option>$100 - $200</option>
+               <option>$200 - $400</option>
+               <option>$400 - $800</option>
+               <option>$800 and above</option>
+             </select>
+         </div>
+
+         <div class="form-group" >
+            <input type="submit" value="GET STARTED" class="form-control" [disabled]='!ads.valid >
+         </div>
+   
+     </div>
+   </form>
+</div>
